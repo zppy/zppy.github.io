@@ -2,7 +2,7 @@
 
 THEME_NAME=S-Type
 THEME_URL=https://github.com/auxio/S-Type/archive/master.zip
-SENTORA_VERSION=( "1.0.0")
+SENTORA_VERSION=( "1.0.0", "1.0.1", "1.0.2", "1.0.3" )
 
 echo "$THEME_NAME Theme installer/updater for Sentora     "
 echo "###########################################################"
