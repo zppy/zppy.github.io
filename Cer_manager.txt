@@ -1,0 +1,9 @@
+{
+    items: [
+    {
+        "ModuleName": "Cer_manager",
+		"ModuleText": "Certificate Manager module for Sentora.",
+		"ModuleAuteurGithubURL": "https://github.com/Diablo925",
+		"ModuleGithubURL": "https://github.com/Diablo925/Cer_manager",
+	}]
+}
