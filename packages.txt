@@ -3,3 +3,4 @@ filemanager
 gatekeeper
 user_logviewer
 Cer_manager
+ELFileManager
