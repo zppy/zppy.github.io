@@ -1,12 +1,9 @@
 {
-    items: [
-    {
-        "ModuleName": "Cer_manager",
-		"ModuleText": "Certificate Manager module for Sentora.",
-		"ModuleAuteur": "Diablo925",
-		"ModuleAuteurGithubURL": "https://github.com/Diablo925",
-		"ModuleAuteurForumURL": "http://forums.sentora.org/member.php?action=profile&uid=13",
-        "ModuleInfoURL": "http://forums.sentora.org/showthread.php?tid=2001&pid=12701#pid12701",
-		"ModuleGithubURL": "https://github.com/Diablo925/Cer_manager",
-	}]
+"ModuleName": "Cer_manager",
+"ModuleText": "Certificate Manager module for Sentora.",
+"ModuleAuteur": "Diablo925",
+"ModuleAuteurGithubURL": "https://github.com/Diablo925",
+"ModuleAuteurForumURL": "http://forums.sentora.org/member.php?action=profile&uid=13",
+"ModuleInfoURL": "http://forums.sentora.org/showthread.php?tid=2001&pid=12701#pid12701",
+"ModuleGithubURL": "https://github.com/Diablo925/Cer_manager"
 }
