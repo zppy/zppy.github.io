@@ -36,18 +36,18 @@
 								<tr>
 									<th>Icon:</th>
 									<th>Name:</th>
-									<th></th>   
+									<th>Description:</th>   
 								</tr>
 							</thead>
 							<tbody>
 								<tr> 
-									<td><a href="#" class="btn"><i class="glyphicons glyphicons-wrench"> </i></a></td>
+									<td><a href="#" class="btn"><i class="glyphicon glyphicon-wrench"> </i></a></td>
 									<td>Test name for module</td>
 									<td>Sam sapien massa, aliquam in cursus ut, ullamcorper in tortor. Aliquam mauris arcu, tristique a lobortis vitae, condimentum feugiat justo.</td>
 									<td><a href="#" class="btn btn-primary">Show</a></td>
 								</tr>
 								<tr>
-									<td><a href="#" class="btn"><i class="glyphicons glyphicons-list-alt"> </i></a></td>
+									<td><a href="#" class="btn"><i class="glyphicon glyphicon-list-alt"> </i></a></td>
 									<td>Test name for module</td>
 									<td>Sam sapien massa, aliquam in cursus ut, ullamcorper in tortor. Aliquam mauris arcu, tristique a lobortis vitae, condimentum feugiat justo.</td>
 									<td><a href="#" class="btn btn-primary">Show</a></td>
@@ -84,7 +84,7 @@
 							<p>check out these themes!</p>
 							<script>
 								$(document).ready(function () {
-									$.get('themes/packages.txt', function(data) {
+									$.get('/website/themes/packages.txt', function(data) {
 										arr = data.split('\n');
 										$.each( arr, function( i, val ){
 											$( "#themes" ).append( '<div class="col-sm-6 col-md-4"><div class="thumbnail"><img src="/website/themes/' + val + '/thumb.png" alt="theme ' + val + ' thumbnail"><div class="caption">	<h4>' + val + '</h4><p class="text-right"><a href="themes/' + val + '/index.htm" class="btn btn-primary" role="button">Show</a></p></div></div></div>' );
