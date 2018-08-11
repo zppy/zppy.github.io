@@ -1,3 +1,3 @@
-$( ".navbar" ).load( "incl/nav.htm" );
-$( ".info" ).load( "incl/info.htm" );
-$( ".footer" ).load( "incl/footer.htm" );
+$( ".navbar" ).load( "/website/incl/nav.htm" );
+$( ".info" ).load( "/website/incl/info.htm" );
+$( ".footer" ).load( "/website/incl/footer.htm" );
