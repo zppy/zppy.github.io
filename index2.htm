@@ -10,7 +10,7 @@
 		<!--[if lt IE 9]>
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<link href="website/css/styles.css" rel="stylesheet">
+		<link href="/website/css/styles.css" rel="stylesheet">
 	</head>
 	<body>
 		<!-- nav --><nav class="navbar navbar-inverse navbar-fixed-top"></nav><!-- /nav -->
@@ -26,9 +26,8 @@
 				</div>
 				<!-- info --><div class="col-md-3 info"></div><!-- /info -->
 			</div>
-		</div>
-		
-		<div class="container">
+
+			
 			<div class="row">
 				<div class="col-md-9">
 					<div class="panel panel-default">
@@ -44,7 +43,7 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td><a href="#" class="btn"><img class="zppy_icon" src="modules/test/img/icon.png"></a></td>
+									<td><a href="#" class="btn"><img class="zppy_icon" src="/website/modules/test/img/icon.png"></a></td>
 									<td>Test name for module</td>
 									<td>Sam sapien massa, aliquam in cursus ut, ullamcorper in tortor. Aliquam mauris arcu, tristique a lobortis vitae, condimentum feugiat justo.</td>
 									<td><a href="#" class="btn btn-primary">Show</a></td>
@@ -56,19 +55,19 @@
 									<td><a href="#" class="btn btn-primary">Show</a></td>
 								</tr>
 								<tr>
-									<td><a href="#" class="btn"><img class="zppy_icon" src="modules/test/img/icon.png"></a></td>
+									<td><a href="#" class="btn"><img class="zppy_icon" src="/website/modules/test/img/icon.png"></a></td>
 									<td>Test name for module</td>
 									<td>Sam sapien massa, aliquam in cursus ut, ullamcorper in tortor. Aliquam mauris arcu, tristique a lobortis vitae, condimentum feugiat justo.</td>
 									<td><a href="#" class="btn btn-primary">Show</a></td>
 								</tr>
 								<tr>
-									<td><a href="#" class="btn"><img class="zppy_icon" src="modules/test/img/icon.png"></a></td>
+									<td><a href="#" class="btn"><img class="zppy_icon" src="/website/modules/test/img/icon.png"></a></td>
 									<td>Test name for module</td>
 									<td>Sam sapien massa, aliquam in cursus ut, ullamcorper in tortor. Aliquam mauris arcu, tristique a lobortis vitae, condimentum feugiat justo.</td>
 									<td><a href="#" class="btn btn-primary">Show</a></td>
 								</tr>
 								<tr>
-									<td><a href="#" class="btn"><img class="zppy_icon" src="modules/test/img/icon.png"></a></td>
+									<td><a href="#" class="btn"><img class="zppy_icon" src="/website/modules/test/img/icon.png"></a></td>
 									<td>Test name for module</td>
 									<td>Sam sapien massa, aliquam in cursus ut, ullamcorper in tortor. Aliquam mauris arcu, tristique a lobortis vitae, condimentum feugiat justo.</td>
 									<td><a href="#" class="btn btn-primary">Show</a></td>
@@ -79,9 +78,8 @@
 				</div>
 				<!-- info --><div class="col-md-3 info"></div><!-- /info -->
 			</div>
-		</div>
-		
-		<div class="container">
+
+			
 			<div class="row">
 				<div class="col-md-9">
 					<div class="panel panel-default">
@@ -93,7 +91,7 @@
 									$.get('themes/packages.txt', function(data) {
 										arr = data.split('\n');
 										$.each( arr, function( i, val ){
-											$( "#themes" ).append( '<div class="col-sm-6 col-md-4"><div class="thumbnail"><img src="themes/' + val + '/thumb.png" alt="theme ' + val + ' thumbnail"><div class="caption">	<h4>' + val + '</h4><p class="text-right"><a href="themes/' + val + '/index.htm" class="btn btn-primary" role="button">Show</a></p></div></div></div>' );
+											$( "#themes" ).append( '<div class="col-sm-6 col-md-4"><div class="thumbnail"><img src="/website/themes/' + val + '/thumb.png" alt="theme ' + val + ' thumbnail"><div class="caption">	<h4>' + val + '</h4><p class="text-right"><a href="themes/' + val + '/index.htm" class="btn btn-primary" role="button">Show</a></p></div></div></div>' );
 										});
 									});
 								});
@@ -104,9 +102,8 @@
 				</div>
 				<!-- info --><div class="col-md-3 info"></div><!-- /info -->
 			</div>
-		</div>
-		
-		<div class="container">
+
+			
 			<div class="row">
 				<div class="col-md-9">
 					<div class="panel panel-default">
@@ -163,6 +160,6 @@
 		
 		<!-- footer --><footer class="footer"></footer><!-- /footer -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-		<script src="website/js/comb.js"></script>
+		<script src="/website/js/comb.js"></script>
 	</body>
 </html>
