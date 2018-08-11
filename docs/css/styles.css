@@ -1,0 +1,36 @@
+/***/
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  padding-top: 70px;
+  margin-bottom: 70px;
+}
+i {
+  font-size:18px;
+}
+.zppy_icon{
+	height: 18px;
+	width: 18px;
+}
+.zppy_icon:hover{
+	opacity: 0.6;
+}
+.table>tbody>tr:hover, .table>tbody>tr:nth-child(odd):hover{
+	background-color: #EFEFEF !important;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+	padding: 15px 8px;
+}
+.thumbnail:hover {
+	background-color: #EFEFEF;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 55px;
+  padding-top:20px;
+  background-color: #efefef;
+}
