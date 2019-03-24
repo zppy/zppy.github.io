@@ -152,7 +152,12 @@
 																		<i class="glyphicon glyphicon-menu-left"></i><br>\
 																		Github\
 																	</a>';
-												}					
+												}	
+												moduledialog += '\
+																<a href="./#' + data.ModuleName + '" class="btn btn-info" target="_blank">\
+																	<i class="glyphicon glyphicon-link"></i><br>\
+																	Direct link\
+																</a>';	
 												moduledialog += '\
 																</div>\
 																<h3>How to install:</h3>\
@@ -340,7 +345,13 @@
 																		<i class="glyphicon glyphicon-menu-left"></i><br>\
 																		Github\
 																	</a>';
-												}					
+												}				
+												tpldialog += '\
+																<a href="./#' + data.TplName + '" class="btn btn-info" target="_blank">\
+																	<i class="glyphicon glyphicon-link"></i><br>\
+																	Direct link\
+																</a>';
+													
 												/* NOT WORKING JET!
 												tpldialog += '\
 																</div>\
@@ -430,5 +441,12 @@
 			</div>
 		</footer>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(window).load(function(){
+			  var mhash = window.location.hash;
+			  $(mhash).delay( 800 ).modal('toggle');
+			});
+			
+		</script>
 	</body>
 </html>
