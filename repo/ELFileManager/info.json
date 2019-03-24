@@ -1,0 +1,11 @@
+{
+"ModuleTitle": "ELFileManager",
+"ModuleName": "ELFileManager",
+"ModuleVersion": "1.0.1", 
+"ModuleText": "File manager module for Sentora build on elFinder version 2.x.",
+"ModuleInfoURL": "http://forums.sentora.org/showthread.php?tid=2076",
+"ModuleGithubURL": "https://github.com/Diablo925/ELFileManager",
+"ModuleAuthor": "Diablo925",
+"ModuleAuthorGithubURL": "https://github.com/Diablo925",
+"ModuleAuthorForumURL": "http://forums.sentora.org/member.php?action=profile&uid=13"
+}

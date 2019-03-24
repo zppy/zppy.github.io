@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Zppy.github.io - Public Sentora Repository</title>
+		<link id="favicon" rel="shortcut icon" type="image/png" href="data:image/png;base64,AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGYzMwAAAAAAZjMzDWYzM2NmMzObZjMz1WYzM/RmMzP/ZjMz/2YzM/VmMzPWZjMznGYzM2NmMzMOAAAAAGYzMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGYzMwAAAAAAZjMzJ2YzM6FmMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzOhZjMzJwAAAABmMzMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmMzMAZjMzBGYzM49mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMzj2YzMwRmMzMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGYzMx9mMzPjZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9iLi7/ZjMz/2YzM/9mMzP/ZjMz42YzMx4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmMzMsZjMz/WYzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/Yy8v/829vf9jLy//ZjMz/2YzM/9mMzP/ZjMz/GYzMywAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmMzMAZjMzHmYzM/1mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YyMv+RbGz/z7+//2EtLf9mMzP/ZjMz/2YzM/9mMzP/ZjMz/WYzMx5mMzMAAAAAAAAAAAAAAAAAZjMzAGYzMwRmMzPjZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/Yi4u//Dr6/97T0//ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz42YzMwRmMzMAAAAAAAAAAAAAAAAAZjMzj2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YyMv+Wc3P/59/f/18qKv9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMzjwAAAAAAAAAAZjMzAGYzMydmMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/Yi8v//Lt7f+benr/ZTIy/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMzJ2YzMwAAAAAAZjMzomYzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2UyMv+Ydnb/9/X1/2QwMP9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzOiAAAAAGYzMw5mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/Yy8v//Dr6/++qKj/Yy4u/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzMOZjMzY2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2UyMv+ef3///////3RHR/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM2NmMzOcZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZDAw//Dr6//YzMz/YCsr/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMzm2YzM9ZmMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2QxMf+lh4f//////5Jubv9mMjL/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzPWZjMz9WYzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9hLS3/ZDAw/2YzM/9mMzP/ZTIy//Lt7f/t5+f/Yi4u/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/RmMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/YSsr/8q5uf+wlpb/azo6/2EsLP+miYn//////7KZmf9kMDD/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2QxMf+Ydnb//////66Tk//g19f/wKur//Dr6////v7/b0BA/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz9GYzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/aDY2//n39/+2nZ3/YS0t/2ArK/+wlZX///////Hs7P+JYmL/YSws/2UyMv9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/VmMzPWZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2EtLf/Gs7P/8+/v/2Y0NP9mMzP/YCsr/9nNzf/8+/v/gVdX/8q4uP/g1tb/jGZm/2QxMf9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz1mYzM5tmMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9nNDT/m3p6//////+IYWH/ZTIy/2YzM/+AVVX//////8Crq/9iLi7/XScn/+zl5f+zmZn/ZDAw/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzOcZjMzY2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2o4OP//////7+rq/2MuLv9mMzP/YSws/86+vv//////e09P/2YzM/95TU3//////3xRUf9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM2NmMzMOZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/d0pK//Lv7/+EXFz/ZTIy/2YzM/9vPz///////9HCwv9gLCz/ZTIy/6KDg//x7Oz/YSws/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMzDgAAAABmMzOiZjMz/2YzM/9mMzP/ZjMz/2YzM/9sOzv/ZDAw/2YyMv9mMzP/Yy8v/7qjo///////i2Vl/2YzM/9gLCz/0sLC/869vf9hLS3/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM6IAAAAAZjMzAGYzMydmMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2ItLf/Dr6//+vj4/+Xd3f9gKyv/ZDEx/4FXV//9/Pz/l3R0/2UyMv9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMzJ2YzMwAAAAAAAAAAAGYzM49mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/Yy8v/8Crq///////9fLy/3NFRf9kMDD/sZeX//////+0mpr/Yy8v/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM48AAAAAAAAAAAAAAABmMzMAZjMzBGYzM+NmMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9jLy//u6Sk/+be3v9tPDz/ZTIy/2UyMv+Tb2//0sPD/2EtLf9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzPjZjMzBGYzMwAAAAAAAAAAAAAAAABmMzMAZjMzHmYzM/1mMzP/ZjMz/2YzM/9mMzP/ZjMz/2QxMf+KY2P/ZjMz/2YzM/9mMzP/ZjMz/2s6Ov9nNTX/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/WYzMx5mMzMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZjMzLGYzM/xmMzP/ZjMz/2YzM/9mMzP/ZjMz/2UyMv9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/1mMzMsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZjMzHmYzM+NmMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzPjZjMzHwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmMzMAZjMzBGYzM49mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMzj2YzMwRmMzMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmMzMAAAAAAGYzMydmMzOhZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMz/2YzM/9mMzP/ZjMzoWYzMycAAAAAZjMzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZjMzAAAAAABmMzMOZjMzY2YzM5xmMzPWZjMz9WYzM/9mMzP/ZjMz9GYzM9VmMzObZjMzY2YzMw0AAAAAZjMzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//AP//+AAf/+AAB//AAAP/gAAB/wAAAP4AAAB8AAAAPAAAADgAAAAYAAAAGAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAABgAAAAYAAAAHAAAADwAAAA+AAAAfwAAAP+AAAH/wAAD/+AAB//4AB///wD/8=">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<style>
+			html {
+			  position: relative;
+			  min-height: 100%;
+			}
+			body {
+			  padding-top: 70px;
+			  margin-bottom: 70px;
+			}
+			i {
+			  font-size:18px;
+			}
+			.zppy_icon{
+				height: 18px;
+				width: 18px;
+			}
+			.zppy_icon:hover{
+				opacity: 0.6;
+			}
+			.table>tbody>tr:hover, .table>tbody>tr:nth-child(odd):hover{
+				background-color: #EFEFEF !important;
+			}
+			.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+				padding: 15px 8px;
+			}
+			.thumbnail:hover {
+				background-color: #EFEFEF;
+			}
+			.footer {
+			  font-size: 10px;
+			  position: absolute;
+			  bottom: 0;
+			  width: 100%;
+			  height: 55px;
+			  padding-top:20px;
+			  background-color: #efefef;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-toggle"></span>
+					</button>
+					<a class="navbar-brand" href="./">zppy.GitHub.io</a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="./">Index</a></li>
+						<li><a href="http://www.sentora.org/" target="_blank">Sentora</a></li>
+						<li><a href="http://forums.sentora.org/" target="_blank">Forums</a></li>
+						<li><a href="http://docs.sentora.org/" target="_blank">Docs</a></li>
+					</ul>
+				</div>
+			</div> 
+		</nav>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9">
+					<div class="panel panel-default">
+						<div class="panel-heading"><h4><i class="glyphicon glyphicon-tasks"></i> 3rd Party Modules</h4></div>
+						<div class="panel-body"><p>check out these modules!</p></div>
+						<script>
+							$(document).ready(function () {
+								$.get('./ModuleList.txt', function(data) {
+									arr = data.split('\n');
+									$.each( arr, function( i, val ){
+										jsonurl = "./repo/"+ val +"/info.json";
+										$.get(jsonurl, function(data) {
+											$( "#ModuleList" ).append('\
+												<tr>\
+													<td>\
+														<a href="#" class="btn" data-toggle="modal" data-target="#'+ data.ModuleName +'">\
+															<i class="glyphicon glyphicon-file"> </i>\
+														</a>\
+													</td>\
+													<td>'+ data.ModuleTitle +'</td>\
+													<td>'+ data.ModuleText +'</td>\
+													<td>\
+														<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#'+ data.ModuleName +'">More</a>\
+													</td>\
+												</tr>\
+											' );
+											moduledialog = '\
+												<div class="modal fade" id="' + data.ModuleName + '" role="dialog">\
+													<div class="modal-dialog">\
+														<div class="modal-content">\
+															<div class="modal-header">\
+																<button type="button" class="close" data-dismiss="modal">&times;</button>\
+																<h4 class="modal-title">Module: ' + data.ModuleTitle + '</h4>\
+															</div>\
+															<div class="modal-body">\
+																<h1>' + data.ModuleTitle + '</h1>\
+																<img src="./repo/' + data.ModuleName + '/thumb.png" alt="img">\
+																<dl style="padding-top:15px;">\
+																	<dt>Module title:</dt>\
+																	<dd>' + data.ModuleTitle + '</dd>\
+																	<dt>Module name:</dt>\
+																	<dd>' + data.ModuleName + '</dd>\
+																	<dt>Module version:</dt>\
+																	<dd>' + data.ModuleVersion + '</dd>\
+																	<dt>Module Author:</dt>\
+																	<dd>' + data.ModuleAuthor + '';
+												if (data.ModuleAuthorGithubURL) {
+													moduledialog += '\
+																		<a href="' + data.ModuleAuthorGithubURL + '" target="_blank">\
+																			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3WAAAN1gGQb3mcAAAAB3RJTUUH4ggMCBUHSjzGXwAAABl0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC4yMfEgaZUAAAD4SURBVChTddG/SoJRGMfx4x9SLLFFaJASl+gOclGHxgSh0UH0AmruDloFp4Y2B4UaNGioQCrQQcS7KEicNUv7/g7vARXeH3yG5/Ccc573vGYtSZTQxBADNHCGfWwkjx5+sNoywz3SsDnAO77wil+45jkeMEEdUZga/vCGME6Qgk48RBBj6KAC7Cg67UaFT+6gnq4KXbfAsQqfFKEpPlVMvSKjwifnWOJbxQd03S12tLCVCPTh6nnSwiVeMPIWcgghhjL60MjaoNHsKPpJVbRwAW2I4xlq1Au1sQv7bKd4RAdZuKjJvc6RFlwCSOAKGsnlGhXs2coY8w85azyd90oJbwAAAABJRU5ErkJggg==" alt="AuthorGithub" />\
+																		</a>';
+												}		
+												if (data.ModuleAuthorForumURL) {
+													moduledialog += '\
+																		<a href="' + data.ModuleAuthorForumURL + '" target="_blank">\
+																			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMjHxIGmVAAABYklEQVQoU11RPWsCQRDdtCG/IIVVKru9D0UrLQQhjY2CHGk894wXC8OZQOAKIYeQKjZaGRFCGhHSJCFWaUwhlkH8JUGIwcnMepsYFx63N/Pe7pu3LFx7nNtHmiauNK0851ysOHeWuH/XdVHTdSdCnA1VksUJkhemWQHTPAUkgGFU5JeAvalhlLhkhycvqJFK1aHXe4Z0ug7t9giSyZoSrZHzFI26B4xsUDEWq0I+34R+/wUsKwDfv4Ns9vL3FgJatFBQntMPWel0HqFQaMJ4PAPXvYVi8XpHIGZoSaxUgU5utR5gMvmAILjHWzfzKCD3CwXOUhUSCRdtXOAM5zAcvkE8Xt0VfJIljO6vqOB5XTnTdg0FryzM+V+DkMv5YNs3u/Eeo8CJ4GaK37VqEMh/o9HFaM+Q6HxjbYDYlw9Hj0I5bwsImYynbhhwXjqUD6cWPQrlTNFRGjQgeSYbKJAnM8bYD2gO6o8l/mOWAAAAAElFTkSuQmCC" alt="AuthorForums" />\
+																		</a>';
+												}
+												moduledialog += '\
+																</dd>\
+																</dl>\
+																<h3>Discription:</h3>\
+																<p>' + data.ModuleText + '</p>\
+																<h3>Links:</h3>\
+																<div>\
+																	<a href="./repo/' + data.ModuleName + '.zpp" class="btn btn-info" target="_blank">\
+																		<i class="glyphicon glyphicon-cloud-download"></i><br>\
+																		Download\
+																	</a>';
+												if (data.ModuleInfoURL) {					
+													moduledialog += '\
+																	<a href="' + data.ModuleInfoURL + '" class="btn btn-info" target="_blank">\
+																		<i class="glyphicon glyphicon-home"></i><br>\
+																		Forum\
+																	</a>';
+												}
+												if (data.ModuleGithubURL) {					
+													moduledialog += '\
+																	<a href="' + data.ModuleGithubURL + '" class="btn btn-info" target="_blank">\
+																		<i class="glyphicon glyphicon-menu-left"></i><br>\
+																		Github\
+																	</a>';
+												}					
+												moduledialog += '\
+																</div>\
+																<h3>How to install:</h3>\
+																<pre><span>1. # zppy repo add zppy.github.io/repo</span><br/><span>2. # zppy update</span><br/><span>3. # zppy install ' + data.ModuleName + '</span></pre>\
+															</div>\
+															<div class="modal-footer">\
+																<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>\
+															</div>\
+														</div>\
+													</div>\
+												</div>\
+											';
+											$( ".footer" ).before( moduledialog );
+										});
+									});
+									
+								});
+							});
+						</script>
+						<table class="table table-striped">
+							<thead class="thead">
+								<tr>
+									<th>Icon:</th>
+									<th>Name:</th>
+									<th>Description:</th>   
+									<th></th>
+								</tr>
+							</thead>
+							<tbody id="ModuleList"></tbody>
+						</table>
+					</div>
+				</div>
+				<div class="col-md-3 hidden-xs hidden-sm info">
+					<h3>
+						<i class="glyphicon glyphicon-info-sign"></i> Information
+					</h3>
+					<hr>
+					<p>
+						This website is still under construction!
+					</p>
+					<hr>
+					<p>
+						<a href="http://zppy.GitHub.io/">zppy.GitHub.io</a> is an public repository based on the <a href="https://github.com/" target="_blank">Github</a> infrastructure for modules and templates for the web hosting control panel <a href="http://sentora.org/" target="_blank">Sentora</a>. 
+					</p>
+					<p>
+						Have you made or do you know a module or template for <a href="http://sentora.org/" target="_blank">Sentora</a> that's not on <a href="http://zppy.GitHub.io/">zppy.GitHub.io</a> yet? Don't hesitate to alert the creator or submit it yourself, so torgheter we can make a complete repo for <a href="http://sentora.org/" target="_blank">Sentora</a>.
+					</p>
+					<p>
+						Find more information about this project on our <a href="https://github.com/zppy" target="_blank">Github</a> or on our topic on the <a href="http://forums.sentora.org/" target="_blank">Sentora forums</a> (not yet!). 
+					</p>
+					<p>
+						Do you still have questions? Try our F.A.Q. on the bottom of this page or ask them on the <a href="http://forums.sentora.org/" target="_blank">Sentora forums</a>
+					</p>
+					<hr>
+					<div class="btn-group btn-group-justified">
+						<a href="#" class="btn btn-info col-sm-6" data-toggle="modal" data-target="#AddModule">
+							<i class="glyphicon glyphicon-tasks"></i><br>
+							Add module
+							</a>
+						<a href="#" class="btn btn-info col-sm-6"  data-toggle="modal" data-target="#AddTheme">
+							<i class="glyphicon glyphicon-picture"></i><br>
+							Add theme
+						</a>
+					</div>
+					<hr>
+
+					<!-- Modal AddModule-->
+					<div class="modal fade" id="AddModule" role="dialog">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">How to add a module.</h4>
+								</div>
+								<div class="modal-body">
+									<p>
+										comming soon, but in basics it is adding your module zzp file and a simular named directory to the repo directory with a filled in info.json and costum tumb.png and last add your module to the ModuleList.txt.
+									</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal fade" id="AddTheme" role="dialog">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">How to add a theme.</h4>
+								</div>
+								<div class="modal-body">
+									<p>
+										comming soon, but in basic it adding your theme zip file and a simular named directory to the tpl directory with a filled in info.json and costum tumb.png and last add your theme to the tplList.txt.
+									</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="panel panel-default">
+						<div class="panel-heading"><h4><i class="glyphicon glyphicon-picture"></i> 3rd Party Templates</h4></div>
+						<div class="panel-body">
+							<p>check out these templates!</p>
+							<script>
+								$(document).ready(function () {
+									$.get('./tplList.txt', function(data) {
+										arr = data.split('\n');
+										$.each( arr, function( i, val ){
+										//alert(val);
+											jsonurl = "./tpl/"+ val +"/info.json";
+											//alert(jsonurl);
+											$.get(jsonurl, function(data) {
+												$( "#tplList" ).append('\
+													<div class="col-sm-6 col-md-4">\
+														<div class="thumbnail">\
+															<img src="./tpl/' + data.TplName + '/thumb.png" alt="theme ' + data.TplName + ' thumbnail">\
+															<div class="caption">	\
+																<h4>' + data.TplTitle + '</h4>\
+																<p class="text-right">\
+																	<a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#' + data.TplName + '">More</a>\
+																</p>\
+															</div>\
+														</div>\
+													</div>\
+												' );
+												tpldialog = '\
+												<div class="modal fade" id="' + data.TplName + '" role="dialog">\
+													<div class="modal-dialog">\
+														<div class="modal-content">\
+															<div class="modal-header">\
+																<button type="button" class="close" data-dismiss="modal">&times;</button>\
+																<h4 class="modal-title">Template: ' + data.TplTitle + '</h4>\
+															</div>\
+															<div class="modal-body">\
+																<h1>' + data.TplTitle + '</h1>\
+																<img src="./tpl/' + data.TplName + '/thumb.png" alt="img">\
+																<dl style="padding-top:15px;">\
+																	<dt>Template title:</dt>\
+																	<dd>' + data.TplTitle + '</dd>\
+																	<dt>Template name:</dt>\
+																	<dd>' + data.TplName + '</dd>\
+																	<dt>Template version:</dt>\
+																	<dd>' + data.TplVersion + '</dd>\
+																	<dt>Template Author:</dt>\
+																	<dd>' + data.TplAuthor + '';
+												if (data.TplAuthorGithubURL) {
+													tpldialog += '\
+																		<a href="' + data.TplAuthorGithubURL + '" target="_blank">\
+																			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3WAAAN1gGQb3mcAAAAB3RJTUUH4ggMCBUHSjzGXwAAABl0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC4yMfEgaZUAAAD4SURBVChTddG/SoJRGMfx4x9SLLFFaJASl+gOclGHxgSh0UH0AmruDloFp4Y2B4UaNGioQCrQQcS7KEicNUv7/g7vARXeH3yG5/Ccc573vGYtSZTQxBADNHCGfWwkjx5+sNoywz3SsDnAO77wil+45jkeMEEdUZga/vCGME6Qgk48RBBj6KAC7Cg67UaFT+6gnq4KXbfAsQqfFKEpPlVMvSKjwifnWOJbxQd03S12tLCVCPTh6nnSwiVeMPIWcgghhjL60MjaoNHsKPpJVbRwAW2I4xlq1Au1sQv7bKd4RAdZuKjJvc6RFlwCSOAKGsnlGhXs2coY8w85azyd90oJbwAAAABJRU5ErkJggg==" alt="AuthorGithub" />\
+																		</a>';
+												}		
+												if (data.TplAuthorForumURL) {
+													tpldialog += '\
+																		<a href="' + data.TplAuthorForumURL + '" target="_blank">\
+																			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMjHxIGmVAAABYklEQVQoU11RPWsCQRDdtCG/IIVVKru9D0UrLQQhjY2CHGk894wXC8OZQOAKIYeQKjZaGRFCGhHSJCFWaUwhlkH8JUGIwcnMepsYFx63N/Pe7pu3LFx7nNtHmiauNK0851ysOHeWuH/XdVHTdSdCnA1VksUJkhemWQHTPAUkgGFU5JeAvalhlLhkhycvqJFK1aHXe4Z0ug7t9giSyZoSrZHzFI26B4xsUDEWq0I+34R+/wUsKwDfv4Ns9vL3FgJatFBQntMPWel0HqFQaMJ4PAPXvYVi8XpHIGZoSaxUgU5utR5gMvmAILjHWzfzKCD3CwXOUhUSCRdtXOAM5zAcvkE8Xt0VfJIljO6vqOB5XTnTdg0FryzM+V+DkMv5YNs3u/Eeo8CJ4GaK37VqEMh/o9HFaM+Q6HxjbYDYlw9Hj0I5bwsImYynbhhwXjqUD6cWPQrlTNFRGjQgeSYbKJAnM8bYD2gO6o8l/mOWAAAAAElFTkSuQmCC" alt="AuthorForums" />\
+																		</a>';
+												}
+												tpldialog += '\
+																</dd>\
+																</dl>\
+																<h3>Discription:</h3>\
+																<p>' + data.TplText + '</p>\
+																<h3>Links:</h3>\
+																<div>\
+																	<a href="./tpl/' + data.TplName + '.zip" class="btn btn-info" target="_blank">\
+																		<i class="glyphicon glyphicon-cloud-download"></i><br>\
+																		Download\
+																	</a>';
+												if (data.TplInfoURL) {					
+													tpldialog += '\
+																	<a href="' + data.TplInfoURL + '" class="btn btn-info" target="_blank">\
+																		<i class="glyphicon glyphicon-home"></i><br>\
+																		Forum\
+																	</a>';
+												}
+												if (data.TplGithubURL) {					
+													tpldialog += '\
+																	<a href="' + data.TplGithubURL + '" class="btn btn-info" target="_blank">\
+																		<i class="glyphicon glyphicon-menu-left"></i><br>\
+																		Github\
+																	</a>';
+												}					
+												/* NOT WORKING JET!
+												tpldialog += '\
+																</div>\
+																<h3>How to install: NOT WORKING!</h3>\
+																<pre><span>1. #  bash <(curl -L -Ss http://zppy.github.io/' + data.TplName + '_installer.sh)</span></pre>\
+															</div>\
+															<div class="modal-footer">\
+																<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>\
+															</div>\
+														</div>\
+													</div>\
+												</div>\
+											';		
+											*/											
+											$( ".footer" ).before( tpldialog );
+											});
+										});
+									});
+								});
+							</script>
+							<div id="tplList"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="panel panel-default">
+						<div class="panel-heading"><h4><i class="glyphicon glyphicon-question-sign"></i> Frequently asked questions</h4></div>
+						<div class="panel-body">
+							<div class="panel-group" id="accordion">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										 <h4 class="panel-title" data-toggle="collapse" data-target="#collapse1">
+											 Question #1: Do we get a F.A.Q. section?
+										 </h4>
+									</div>
+									<div id="collapse1" class="panel-collapse collapse">
+										<div class="panel-body">
+											Yes, of course!
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										 <h4 class="panel-title" data-toggle="collapse" data-target="#collapse2">
+											 Question #2: When do we get a F.A.Q. section?
+										 </h4>
+									</div>
+									<div id="collapse2" class="panel-collapse collapse">
+										<div class="panel-body">
+											I do not know jet!
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										 <h4 class="panel-title" data-toggle="collapse" data-target="#collapse3">
+											 Question #3: Did you have fun making these stupid questions?
+										 </h4>
+									</div>
+									<div id="collapse3" class="panel-collapse collapse">
+										<div class="panel-body">
+											A littlebit, it's more fun then posting some lorem ipsum....
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										 <h4 class="panel-title" data-toggle="collapse" data-target="#collapse4">
+											 Question #4: Can we help maintaining this repo?
+										 </h4>
+									</div>
+									<div id="collapse4" class="panel-collapse collapse">
+										<div class="panel-body">
+											Yes! Please do, thats also why it's on <a href="https://github.com/zppy" target="_blank">Github</a>. Make a change and push it! ** hears <a href="https://www.youtube.com/watch?v=vCadcBR95oU" target="_blank">this</a> **
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<p class="text-muted text-right">zppy.GitHub.io is (hopefuly) an collaboration from <a href="http://sentora.org/" target="_blank">Sentora</a>'s 3rd party developers and users.</p>
+			</div>
+		</footer>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	</body>
+</html>

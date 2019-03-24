@@ -1,0 +1,11 @@
+{
+"ModuleTitle": "GateKeeper",
+"ModuleName": "gatekeeper",
+"ModuleVersion": "1.0.0", 
+"ModuleText": "Easily view and change your XMWS API server key.",
+"ModuleInfoURL": "http://forums.sentora.org/showthread.php?tid=3554",
+"ModuleGithubURL": "https://github.com/auxio/GateKeeper",
+"ModuleAuthor": "ballen",
+"ModuleAuthorGithubURL": "https://github.com/allebb",
+"ModuleAuthorForumURL": "http://forums.sentora.org/member.php?action=profile&uid=1"
+}

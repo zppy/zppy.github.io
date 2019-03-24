@@ -1,5 +1,0 @@
-theme-dummy
-theme-dummy2
-CstyleX
-S-Type
-Zentora

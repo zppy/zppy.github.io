@@ -1,0 +1,11 @@
+{
+"ModuleTitle": "CPU & RAM info",
+"ModuleName": "cpuraminfo",
+"ModuleVersion": "1.0.0", 
+"ModuleText": "This module gives the zadmin complete control over what is happening on their server.",
+"ModuleInfoURL": "http://forums.sentora.org/showthread.php?tid=1795",
+"ModuleGithubURL": "",
+"ModuleAuthor": "jollyjoke",
+"ModuleAuthorGithubURL": "",
+"ModuleAuthorForumURL": "http://forums.sentora.org/member.php?action=profile&uid=1294"
+}

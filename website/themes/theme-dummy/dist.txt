@@ -1,6 +1,0 @@
-dummy-theme
-Ron-e
-http://auxio.eu/
-mail@auxio.eu
-1.0.1
-this is a dummy theme. nothing special about this!
